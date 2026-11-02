@@ -1,14 +1,15 @@
 # Real-Time Memory Arbitration
 
 ## Objectives
-+ At least two functioning Verilog arbiter implementations: fixed-priority and round-robin.
-+ A testbench that generates controlled request traffic and evaluates deadline satisfaction.
-+ Questa simulation results comparing both policies under multiple contention and workload scenarios.
-+ An evaluation of the strengths and limitations of each policy for real-time shared-resource access.
+1. At least two functioning Verilog arbiter implementations: fixed-priority and round-robin.
+2. A testbench that generates controlled request traffic and evaluates deadline satisfaction.
+3. Questa simulation results comparing both policies under multiple contention and workload scenarios.
+4. An evaluation of the strengths and limitations of each policy for real-time shared-resource access.
 
 And, if time permits,
+
 5. Vivado synthesis results comparing FPGA resource utilization and timing characteristics.
-+  A third arbiter (deadline based policy) Verilog implementation and evaluation.
+6. A third arbiter (deadline based policy) Verilog implementation and evaluation.
 
 ## Evaluation
 The evaluation will use four simulated requesters competing for a single resource. Experiments will vary request arrival patterns, transaction durations, and deadline constraints. Test scenarios will include simultaneous requests, periodic traffic, aperiodic traffic, and continuous requests from multiple requesters.
