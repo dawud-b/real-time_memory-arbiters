@@ -14,8 +14,8 @@ assign or_s[0]    = requesters[0];
 genvar i;
 generate
   for (i=1; i < NUM_REQUESTERS; i=i+1) begin
-    assign or_s[i] = or_s[i-1] | requester[i];
-    assign granted[i] = ~(or_s[i-1]) & requester[i];
+    assign or_s[i] = or_s[i-1] | requesters[i];
+    assign granted[i] = ~(or_s[i-1]) & requesters[i];
   end
 endgenerate
   

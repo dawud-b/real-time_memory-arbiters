@@ -17,8 +17,7 @@ initial begin
   request = 4'b0011;
   #10
   request = 4'b1000;
-  #10
-  $finish;
+  #10;
 end
 
 endmodule
